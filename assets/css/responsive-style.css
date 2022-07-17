@@ -1,0 +1,202 @@
+/* ---------------------------------- */
+/*             responsive             */
+/* ---------------------------------- */
+/* */
+
+
+/* ------ responsive with 1314px ----- */
+@media (max-width: 1314px){
+    .products .row .card{
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 3rem;
+    }
+    .products .row .card img{
+        width: 90%;
+    }
+    .products .row .card .inner-card{
+        text-align: center;
+    }
+    .products .row .card .inner-card .stars i{
+        font-size: 2rem;
+    }
+    .products .row .card .inner-card h3{
+        font-size: 2rem;
+    }
+    .products .row .card .inner-card p{
+        font-size: 2rem;
+    }
+    .products .row .card .inner-card p span{
+        font-size: 1.5rem;
+    }
+}
+
+/* ------ responsive with 1175px ----- */
+@media (max-width: 1175px){
+    .featured .card-body{
+        flex-direction: column !important;
+    }
+    .featured .card-inner{
+        padding-left: 0;
+    }
+    .offer .row .card .content{
+        left: 5rem;
+    }
+    
+}
+
+/* ------ responsive with 900px ----- */
+@media (max-width: 900px) {
+    html{
+        font-size: 55%;
+    }
+    header .nav-bar{
+        position: absolute;
+        top: 100%; left: 0;
+        background-color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        z-index: 9999;
+    }
+    header .nav-bar.nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        z-index: 9999;
+    }
+    .nav-bar ul li a{
+        display: block;
+        font-size: 2rem !important;
+        margin: 1.5rem;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    .home{
+        background-position: left;
+    }
+    .home .content h3{
+        font-size: 4.3rem;
+    }
+    .container-{
+        padding: .5rem 3%;
+    }
+    .featured .card .card-body .card-inner .star i{
+        font-size: 1.7rem;
+    }
+    .featured .card .card-body .card-inner h3{
+        text-transform: capitalize;
+        font-size: 2rem;
+        padding: .7rem 0;
+        color: var(--black);
+    }
+    .featured .price{
+        position: absolute;
+        background-color: var(--yellow);
+        color: #333;
+        padding: 2rem .7rem;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        right: 1rem;
+        top: 1rem;
+    }
+    .offer .row .card .content{
+        position: absolute;
+        top: 50%; left: 5rem;
+    }
+    .offer .row .card .content{
+        left: 6rem;
+    }
+    .contact{
+        padding: 5rem 0;
+        padding-bottom: 5rem;
+    }
+}
+
+/* ------ responsive with 720px ----- */
+
+/* @media (max-width: 720px){
+
+} */
+
+/* ------ responsive with 576px ----- */
+
+@media (max-width: 576px) {
+    html{
+        font-size: 50%;
+    }
+    .home{
+        background-position: left;
+    }
+    .home .content{
+        text-align: center;
+        margin: auto;
+    }
+    .category .cate-box{
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+    .heading{
+        font-size: 2.3rem;
+        padding: .5rem 0;
+    }
+    .heading1{
+        font-size: 2.2rem;
+        padding-top: 8rem;
+    }
+    .category{
+        padding-top: 8rem;
+    }
+    .featured .card-body img{
+        width: 60%;
+    }
+    .products .row .card .inner-card h3{
+        font-size: 2.2rem;
+    }
+    .contact form .input-middle .input-box input, .contact form textarea {
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        width: 95%;
+    }
+}
+
+/* ------ responsive with 400px ----- */
+
+@media (max-width: 450px){
+    .featured .card-body img{
+        width: 80%;
+    }
+    .deal .content h3{
+        width: auto;
+        font-size: 4rem;
+    }
+    .offer .row .card .content h3{
+        font-size: 3.5rem;
+    }
+    .offer .row .card .content p{
+        font-size: 1.8rem;
+    }
+    input#name, input#email, input#number, input#subject{
+        width: 100%;
+    }
+    input#name, input#number{
+        float: none;
+    }
+    input#email, input#subject{
+        float: none;
+    }
+    .contact{
+        padding: 10rem 0;
+    }
+    
+}
